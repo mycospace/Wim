@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background: #f0f4f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app-container {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 400px;
+  max-width: 90%;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 16px;
+  color: #1f3e5a;
+}
+
+.instructions p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.timer-container {
+  margin-bottom: 20px;
+}
+
+.phase-display {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.time-display {
+  font-size: 2rem;
+  font-weight: bold;
+  background: #e3f5ff;
+  padding: 15px;
+  border-radius: 6px;
+  border: 2px solid #1f3e5a;
+  display: inline-block;
+  min-width: 120px;
+}
+
+button {
+  background: #1f3e5a;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 16px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background: #2d557c;
+}
+
+.current-round {
+  margin: 10px 0;
+}
+
+.log-container {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.log-container h2 {
+  margin-bottom: 8px;
+  color: #1f3e5a;
+}
+
+.log-container ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
