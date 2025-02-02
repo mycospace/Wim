@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wim-Hof-Atmung</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-container">
+    <h1>Wim-Hof-Atmung</h1>
+    <div class="instructions">
+      <p>
+        Folge den Anweisungen, um die Wim-Hof-Atemtechnik zu praktizieren.  
+        Achte dabei stets auf deinen Körper und breche ab, wenn du dich unwohl fühlst.
+      </p>
+    </div>
+
+    <div class="timer-container">
+      <div class="phase-display" id="phaseDisplay">Bereit?</div>
+      <div class="time-display" id="timeDisplay">00:00</div>
+    </div>
+
+    <button id="startBtn">Start</button>
+    <button id="stopBtn" disabled>Stop</button>
+
+    <div class="current-round">
+      <p>Aktuelle Runde: <span id="currentRound">0</span> / <span id="totalRounds">3</span></p>
+    </div>
+
+    <div class="log-container">
+      <h2>Protokoll</h2>
+      <ul id="log"></ul>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
